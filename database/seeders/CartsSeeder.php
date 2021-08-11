@@ -17,7 +17,7 @@ class CartsSeeder extends Seeder
     public function run()
     {
         DB::table('carts')->insert([
-            'products_id' => 1,
+            'product_id' => 1,
             'user_id' => 1,
             'count' => mt_rand(10,30),
         ]);

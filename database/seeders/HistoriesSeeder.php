@@ -17,7 +17,7 @@ class HistoriesSeeder extends Seeder
     public function run()
     {
         DB::table('histories')->insert([
-            'products_id' => 1,
+            'product_id' => 1,
             'user_id' => 1,
             'count' => mt_rand(10,30),
             'price' => mt_rand(100,300),

@@ -13,4 +13,14 @@ class Product extends Model
     {
         return $this->belongsTo(Carts::class);
     }
+
+    public function history()
+    {
+        return $this->belongsTo(Histories::class);
+    }
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
 }
