@@ -16,7 +16,7 @@
         @foreach($histories as $key => $history)
             <tr>
                 <td>{{ $key +1 }}</td>
-                <td>{{$history->product_id}}</td>
+                <td>{{$history->product->name}}</td>
                 <td>{{$history->count}}</td>
                 <td>{{$history->price}}</td>
             </tr>
@@ -24,7 +24,7 @@
         </table>
         
         <div>
-            <a href="/products"  class="text-decoration-none">Profile</a>
+            <a href="/products"  class="text-decoration-none">Products</a>
             <a href="/carts"  class="text-decoration-none">Carts</a>
         </div>
    </div>

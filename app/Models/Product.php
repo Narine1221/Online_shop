@@ -9,14 +9,14 @@ class Product extends Model
 {
     use HasFactory;
 
-    public function cart()
+    public function carts()
     {
         return $this->belongsTo(Carts::class);
     }
 
-    public function history()
+    public function histories()
     {
-        return $this->belongsTo(Histories::class);
+        return $this->hasMany(Histories::class);
     }
 
     public function users()

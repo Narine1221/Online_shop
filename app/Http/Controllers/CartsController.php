@@ -13,6 +13,9 @@ class CartsController extends Controller
         
         return view("pages.carts.index", compact("carts"));
     }
+    public function create(){
+        $carts = Cart::where("user_id", Auth::id()); 
+    }
 
     public function delete($id) {
 

@@ -16,14 +16,14 @@
         @foreach($carts as $key => $cart)
             <tr>
                 <td>{{ $key + 1 }}</td>
-                <td>{{$cart->product_id}}</td>
+                <td>{{$cart->product->name}}</td>
                 <td>{{$cart->count}}</td>  
+                <td>{{$cart->product->price}}</td>
                 <td>
                     <form action="/carts/delete/{{ $cart->id }}" method="POST">
                         @csrf
                         <input type="submit" class="btn btn-danger" value="Delete">
                     </form>
-
                 </td>              
             </tr>
             @endforeach

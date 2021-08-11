@@ -20,10 +20,10 @@
             </tr>
         @endforeach
         </table>
-        {{-- @if()
-        <a href="/histories" class="btn btn-dark">Buy</a>
-        @endif --}}
-        <!-- <button type="button" onclick="window.location='{{ url("histories") }}'">BUy</button> -->
+       <form action="/carts/create/{{ $product->id }}" method="POST">
+            <input type="submit" value="Buy">
+       </form>
+
         <div>
             <a href="/products"  class="text-decoration-none">Profile</a>
         </div>
