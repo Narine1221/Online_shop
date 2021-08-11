@@ -20,7 +20,10 @@
             </tr>
         @endforeach
         </table>
+        {{-- @if()
         <a href="/histories" class="btn btn-dark">Buy</a>
+        @endif --}}
+        <!-- <button type="button" onclick="window.location='{{ url("histories") }}'">BUy</button> -->
         <div>
             <a href="/products"  class="text-decoration-none">Profile</a>
         </div>
