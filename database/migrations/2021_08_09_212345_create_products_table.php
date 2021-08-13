@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->unsignedInteger("user_id");
             $table->integer("count");
             $table->integer("price");
+            $table->timestamps();
         });
     }
 

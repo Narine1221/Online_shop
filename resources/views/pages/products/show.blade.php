@@ -21,11 +21,11 @@
         @endforeach
         </table>
        <form action="/carts/create/{{ $product->id }}" method="POST">
-            <input type="submit" value="Buy">
+            <input type="submit" value="Add to cart" name="add_to_cart">
        </form>
 
         <div>
-            <a href="/products"  class="text-decoration-none">Profile</a>
+            <a href="/products"  class="text-decoration-none">Products</a>
         </div>
    </div>
 

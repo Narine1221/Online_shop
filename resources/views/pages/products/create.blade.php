@@ -9,8 +9,8 @@
 	<!-- {{-- @include("errors.form")  --}} -->
 
 
-    <form action="POST">
-
+    <form action="" method="POST">
+        
         @csrf
 
         <div class="form-group">

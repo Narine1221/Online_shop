@@ -9,7 +9,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    public function carts()
+    public function cart()
     {
         return $this->belongsTo(Carts::class);
     }

@@ -17,6 +17,7 @@ class ProductsController extends Controller
     }
     
     public function create () {
+        
         return view("pages.products.create");
         
     }
@@ -71,6 +72,13 @@ class ProductsController extends Controller
         
         return view("pages.products.show", compact("products"));
     }
+
+    public function buy($id) {
+        $products = Product::get();
+        
+        return view("pages.carts.index");
+    }
+    
     public function delete($id) {
 
         Product::destroy($id);

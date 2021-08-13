@@ -20,11 +20,11 @@
 		</div>
 
 		<div class="form-group">
-			<input type="password" placeholder="New-password" class='form-control' name="new-password">
+			<input type="password" placeholder="New-password" class='form-control' name="new_password">
 		</div>
 
 		<div class="form-group">
-			<input type="password" placeholder="Re_password" class='form-control' name="re-password">
+			<input type="password" placeholder="Re_password" class='form-control' name="re_password">
 		</div>
 
 		<div>

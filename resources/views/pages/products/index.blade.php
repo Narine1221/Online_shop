@@ -5,8 +5,11 @@
 @section("content")
 
    <div class="container mt-5">
-
-   <a href="/products/create">New</a>
+       <div>
+            <a href="/products/create">New</a>
+            <a href="/histories"  class="text-decoration-none">Histories</a>
+            <a href="/carts"  class="text-decoration-none">Carts</a>
+        </div>
     <table class="table table-striped table-dark">
         <tr>
             <td>#</td>
@@ -31,11 +34,6 @@
             </tr>
             @endforeach
         </table>
-        
-        <div>
-            <a href="/histories"  class="text-decoration-none">Histories</a>
-            <a href="/carts"  class="text-decoration-none">Carts</a>
-        </div>
    </div>
 
 

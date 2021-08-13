@@ -40,6 +40,9 @@ Route::prefix("/products")->name("products.")->group( function () {
     Route::post('/edit/{id}', [ProductsController::class, "update"]);
     
     Route::get('/show/{id}', [ProductsController::class, "show"]);
+
+    Route::get('/buy/{id}', [ProductsController::class, "buy"]);
+
     
     Route::post('/delete/{id}', [ProductsController::class, "delete"]);
 
@@ -49,6 +52,10 @@ Route::prefix("/products")->name("products.")->group( function () {
 
  Route::get('/carts', [CartsController::class, "index"]);
  Route::post('/carts/create', [CartsController::class, "create"]);
+
+ Route::post('/carts/{id}/plus', [CartsController::class, "plus"]);
+ Route::post('/carts/{id}/minus', [CartsController::class, "minus"]);
+
 
  Route::post('/carts/delete/{id}', [CartsController::class, "delete"]);
  
@@ -60,5 +67,3 @@ Route::prefix("/products")->name("products.")->group( function () {
 
  Route::get('/profile', [ProfileController::class, "index"]);
  Route::post('/profile', [ProfileController::class, "update"]);
-
-

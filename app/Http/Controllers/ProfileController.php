@@ -15,15 +15,16 @@ class ProfileController extends Controller
 
     public function update(ProfileRequest $request){
         $password = $request->password;
+        $user = Auth::user();
         
-        if($password != " "){
-            if (!Hash::check($password,  Auth::user()->password)) {
-                if(){
-                    Hash::make($request->new-password);
-                }
-                
+        if (!Hash::check($password,  Auth::user()->password)) {
+            if($request->new->password == $request->re_password)){
+                $user->password = Hash::make($new_password);
+                $user->save();
+                return view("pages.profile.index");
             }
         }
+
     }
 
 }
